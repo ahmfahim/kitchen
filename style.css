@@ -1,9 +1,12 @@
 body{
-    background-color:rgb(245, 220, 78);
+    background-color:#f5dc4e;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 /* nav section */
+.nav-link-bg{
+    background: #f5dc4e;
+}
 .title{
     float: left;
     margin: auto;
@@ -41,24 +44,52 @@ body{
     }
 }
 /* show item search section */
-.show-item{
+.seacrh_Sec{
     margin-bottom: 100px;
     margin-top: 100px;
 }
-.input-group{
-    width:400px;
+.meal-img img{
+    width: 50%;
 }
-.input-group input{
-    border: none;
+.meal-search .title{
+    float:none;
+    text-align: center;
+    padding-bottom: 10px;
 }
-.input-group .btn{
+blockquote{
+    float: none;
+    text-align: center;
+    opacity: 60%;
+}
+.meal-result .title{
+    float: none;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.meal-name h3{
+    padding-top: 10px;
+    text-align: center;
+    float: none;
+}
+.meal-name .recipe-btn{
+    background: purple;
+    padding:10px;
+    border-radius: 20px;
     color: white;
+    width: 103px;
+    text-decoration: none;
+}
+.meal-search-box button{
     background-color: purple;
-    border:none;
+    color: white;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+.meal-search-box{
+    width: 400px;
 }
 
 /* about */
-
 .about-title{
     font-size: 20px;
     font-weight: bold;

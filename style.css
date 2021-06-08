@@ -57,6 +57,7 @@ body{
 .meal-name{
     background-color: white;
     width: 100%;
+    padding:20px;
     margin: auto;  
     border-bottom-right-radius: 50px;
     box-shadow: 1px 1px 5px #858585;
@@ -72,6 +73,49 @@ body{
     text-align: center;
     padding-bottom: 10px;
 }
+blockquote{
+    float: none;
+    text-align: center;
+    opacity: 60%;
+}
+.meal-result .title{
+    float: none;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.meal-name h3{
+    padding-top: 10px;
+    text-align: center;
+    float: none;
+    font-size: 20px;
+}
+.meal-name a{
+    background: purple;
+    padding:10px;
+    border-radius: 20px;
+    color: white;
+    width: 103px;
+    text-decoration: none;
+    margin: auto;
+}
+.meal-search-box button{
+    background-color: purple;
+    color: white;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+.meal-search-box{
+    width: 400px;
+}
+.not-Found{
+    grid-template-columns: 1fr!important;
+    color:tomato;
+    font-size: 1.8rem;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+}
+
 @media(max-width: 600px){
     .meal-img img{
         width: 100%;
@@ -87,42 +131,16 @@ body{
         grid-template-columns: repeat(2, 1fr);
         gap:2rem;
     }
-}
-blockquote{
-    float: none;
-    text-align: center;
-    opacity: 60%;
-}
-.meal-result .title{
-    float: none;
-    text-align: center;
-    padding-bottom: 30px;
-}
-.meal-name h3{
-    padding-top: 10px;
-    text-align: center;
-    float: none;
-}
-.meal-name .recipe-btn{
-    background: purple;
-    padding:10px;
-    border-radius: 20px;
-    color: white;
-    width: 103px;
-    text-decoration: none;
-    margin-bottom: 20px;
-}
-.meal-search-box button{
-    background-color: purple;
-    color: white;
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
-}
-.meal-search-box{
-    width: 400px;
+    .meal-name h3{
+        padding-top: 10px;
+        text-align: center;
+        float: none;
+        font-size: 15px;
+    }
 }
 
 /* meal details */
+
 .meal-details{
     position:fixed;
     top: 50%;
@@ -136,6 +154,9 @@ blockquote{
     padding:2rem;
     border-radius: 1rem;
     display: none;
+}
+.showRecipe{
+    display: block;
 }
 .recipe-meal-img img{
     width: 40%;
@@ -178,11 +199,6 @@ blockquote{
         width: 100%;
     }
 }
-
-
-
-
-
 
 /* about */
 .about-title{
